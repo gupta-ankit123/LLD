@@ -84,7 +84,7 @@ public:
     {
         cout << "Saving to Mongo DB...." << endl;
     }
-    void saveToFIle()
+    void saveToFile()
     {
         cout << "Saving to File..." << endl;
     }
@@ -101,7 +101,7 @@ int main()
 
     ShoppingCartStorage *storage = new ShoppingCartStorage(cart);
     storage->saveToDB();
-    storage->saveToFIle();
+    storage->saveToFile();
     storage->saveToMongoDB();
 
     return 0;
